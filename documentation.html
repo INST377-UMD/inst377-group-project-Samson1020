@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include AOS library styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Add AOS animation to the heading -->
+    <h1 data-aos="fade-up">Weather App Documentation</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-aos="fade-up" data-aos-delay="200">Home</a></li>
+        <li><a href="about.html" data-aos="fade-up" data-aos-delay="400">About</a></li>
+        <li><a href="documentation.html" data-aos="fade-up" data-aos-delay="600">Documentation</a></li>
+      </ul>
+    </nav>
+
+    <!-- Getting Started Section -->
+    <section data-aos="fade-up" data-aos-delay="800">
+      <h2>Getting Started</h2>
+      <p>Welcome to the Weather App documentation. This section provides information on how to get started with the app.</p>
+
+      <h3>Installation</h3>
+      <p>To use the Weather App, simply open the app in your web browser. There is no need for installation or additional setup.</p>
+
+      <!-- Dependencies Section -->
+      <h3>Dependencies</h3>
+      <p>The Weather App utilizes the following libraries:</p>
+      <ul>
+        <!-- AOS (Animate On Scroll) Library -->
+        <li>
+          <strong>AOS (Animate On Scroll):</strong> AOS is used for animating elements on scroll.
+          You can find more about it <a href="https://github.com/michalsnik/aos" target="_blank">here</a>.
+          <!-- Include AOS library script -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        </li>
+        <!-- Fetch API (Native JavaScript) -->
+        <li>
+          <strong>Fetch API:</strong> The app uses the Fetch API to make asynchronous requests to the OpenWeatherMap API.
+        </li>
+      </ul>
+
+      <!-- Add more content as needed -->
+    </section>
+
+    <!-- Using the Weather App Section -->
+    <section data-aos="fade-up" data-aos-delay="1000">
+      <h2>Using the Weather App</h2>
+      <p>Learn how to use the Weather App to check the weather forecast for different cities worldwide.</p>
+
+      <!-- Add more content as needed -->
+    </section>
+
+    <!-- API Integration Section -->
+    <section data-aos="fade-up" data-aos-delay="1200">
+      <h2>API Integration</h2>
+      <p>Details on how the Weather App integrates with the OpenWeatherMap API for real-time weather data.</p>
+
+      <h3>OpenWeatherMap API Key</h3>
+      <p>The Weather App uses the OpenWeatherMap API to fetch weather data. You need to obtain an API key from OpenWeatherMap and set it in the `main.js` file under the variable `apiKey`. You can get an API key by signing up on the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a> website.</p>
+
+      <h3>API Endpoints</h3>
+      <p>The following API endpoints are used:</p>
+      <ul>
+        <li><strong>Current Weather:</strong> `https://api.openweathermap.org/data/2.5/weather`</li>
+        <li><strong>5-Day Forecast:</strong> `https://api.openweathermap.org/data/2.5/forecast`</li>
+      </ul>
+
+      <!-- Add more content as needed -->
+    </section>
+
+    <!-- Add more sections as needed -->
+
+  </div>
+
+  <script src="main.js"></script>
+  <!-- Initialize AOS when the DOM content is loaded -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        // Customize AOS options here
+        duration: 800,
+        easing: 'ease-in-out',
+      });
+    });
+  </script>
+</body>
+</html>
